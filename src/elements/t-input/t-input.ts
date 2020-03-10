@@ -14,6 +14,8 @@ export class TButton extends LitElement {
 
   set value(value: string) {
     this.inputValue = value;
+    const event = new Event('change');
+    this.dispatchEvent(event);
   }
 
   get value() {
@@ -31,7 +33,7 @@ export class TButton extends LitElement {
         <span><slot></slot></span>
         <input
           value=${this.inputValue}
-          @keydown=${(e: any) => { this.valueChanged(e) }}
+          @keyup=${(e: any) => { this.valueChanged(e) }}
           @change=${(e: any) => { this.valueChanged(e) }}
           type="text"
         />
