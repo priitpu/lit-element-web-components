@@ -29,7 +29,12 @@ export class TButton extends LitElement {
     return html`
       <label>
         <span><slot></slot></span>
-        <input value=${this.inputValue} @change=${(e: any) => { this.valueChanged(e) }} type="text" />
+        <input
+          value=${this.inputValue}
+          @keydown=${(e: any) => { this.valueChanged(e) }}
+          @change=${(e: any) => { this.valueChanged(e) }}
+          type="text"
+        />
       </label>
     `;
   }
