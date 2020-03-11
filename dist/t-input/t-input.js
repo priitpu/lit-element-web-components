@@ -20,6 +20,7 @@ let TInput = class TInput extends LitElement {
         return css `
       :host {
         display: flex;
+
       }
       .t-input input {
         box-sizing: border-box;
