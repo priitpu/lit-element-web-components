@@ -10,12 +10,9 @@ import '../t-button/t-button.ts';
 Blablabalbalbalba
 
 <Preview>
-  <Story name="Primary">
+  <Story name="primary">
     {() => html`
       <t-button-group>
-        <t-button>Label</t-button>
-        <t-button theme="secondary">Label</t-button>
-        <t-button>Label</t-button>
         <t-button>Label</t-button>
         <t-button>Label</t-button>
         <t-button>Label</t-button>
@@ -25,3 +22,58 @@ Blablabalbalbalba
   </Story>
 </Preview>
 
+<Preview>
+  <Story name="mixed">
+    {() => html`
+      <t-button-group>
+        <t-button><t-icon glyph="save" slot="l-icon"></t-icon>Label</t-button>
+        <t-button theme="secondary"><t-icon glyph="info" slot="l-icon"></t-icon>Label</t-button>
+        <t-button theme="link"><t-icon glyph="delete" slot="l-icon"></t-icon>Label</t-button>
+      </t-button-group>
+    `}
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="too many">
+    {() => html`
+      <t-button-group>
+        <t-button theme="secondary">Label</t-button>
+        <t-button>Label</t-button>
+        <t-button theme="link">Label</t-button>
+        <t-button>Label</t-button>
+        <t-button theme="secondary">Label</t-button>
+        <t-button theme="secondary">Label</t-button>
+        <t-button>Label</t-button>
+        <t-button theme="link">Label</t-button>
+        <t-button>Label</t-button>
+        <t-button theme="secondary">Label</t-button>
+        <t-button theme="secondary">Label</t-button>
+        <t-button>Label</t-button>
+        <t-button theme="link">Label</t-button>
+        <t-button>Label</t-button>
+        <t-button theme="secondary">Label</t-button>
+        <t-button theme="secondary">Label</t-button>
+        <t-button>Label</t-button>
+        <t-button theme="link">Label</t-button>
+        <t-button>Label</t-button>
+        <t-button theme="secondary">Label</t-button>
+        <t-button theme="secondary">Label</t-button>
+        <t-button>Label</t-button>
+        <t-button theme="link">Label</t-button>
+        <t-button>Label</t-button>
+        <t-button theme="secondary">Label</t-button>
+        <t-button theme="secondary">Label</t-button>
+        <t-button>Label</t-button>
+        <t-button theme="link">Label</t-button>
+        <t-button>Label</t-button>
+        <t-button theme="secondary">Label</t-button>
+        <t-button theme="secondary">Label</t-button>
+        <t-button>Label</t-button>
+        <t-button theme="link">Label</t-button>
+        <t-button>Label</t-button>
+        <t-button theme="secondary">Label</t-button>
+      </t-button-group>
+    `}
+  </Story>
+</Preview>

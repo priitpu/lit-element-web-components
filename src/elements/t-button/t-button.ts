@@ -18,6 +18,9 @@ export class TButton extends LitElement {
       :host-context(t-button-group):host(:not(:last-child):not(:first-child)) .btn {
         border-radius: 0;
       }
+      :host-context(t-button-group):host(:first-child:last-child) .btn {
+        border-radius: 4px;
+      }
       :host-context(t-button-group):host(:first-child) .btn {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;

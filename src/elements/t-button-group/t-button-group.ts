@@ -8,7 +8,7 @@ export class TButtonGroup extends LitElement {
         display: flex;
       }
       .t-button-group ::slotted(*) {
-        margin-right: 10px;
+        margin-right: 4px;
       }
       .t-button-group ::slotted(t-button:last-child) {
         margin-right: 0;
